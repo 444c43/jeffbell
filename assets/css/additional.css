@@ -1,0 +1,33 @@
+.between {
+	height: 180px;
+}
+
+@media screen and (max-width: 1680px) {
+	.image.left img {
+		width: 100%;
+	}
+	.logo-design {
+		height: 50%;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.image.left img {
+		width: 100%;
+	}
+	.logo-design {
+		height: 50%;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.image.left img {
+		width: 83%;
+	}
+	.logo-design {
+		height: 50%;
+		width: 50%;
+	}
+}
