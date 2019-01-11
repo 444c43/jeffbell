@@ -108,6 +108,7 @@
 
 								// Activate article.
 									$article.addClass('active');
+									$article.children('video').attr('autoplay', true);
 
 								// Unlock.
 									locked = false;
@@ -131,6 +132,7 @@
 								var $currentArticle = $main_articles.filter('.active');
 
 								$currentArticle.removeClass('active');
+								$currentArticle.children('video').attr('autoplay', false)
 
 							// Show article.
 								setTimeout(function() {
@@ -145,6 +147,7 @@
 										setTimeout(function() {
 
 											$article.addClass('active');
+											$article.children('video').attr('autoplay', true)
 
 											// Window stuff.
 												$window
@@ -184,6 +187,7 @@
 										setTimeout(function() {
 
 											$article.addClass('active');
+											$article.children('video').attr('autoplay', true)
 
 											// Window stuff.
 												$window
@@ -226,6 +230,7 @@
 
 								// Deactivate article.
 									$article.removeClass('active');
+									$article.children('video').attr('autoplay', false)
 
 								// Hide article, main.
 									$article.hide();
@@ -258,6 +263,7 @@
 
 					// Deactivate article.
 						$article.removeClass('active');
+						$article.children('video').attr('autoplay', false)
 
 					// Hide article.
 						setTimeout(function() {
