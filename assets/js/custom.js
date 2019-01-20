@@ -1,4 +1,5 @@
 function playVideo(videoID) {
+  stopVideo();
   var vid = document.getElementById(videoID);
   vid.autoplay = true;
   vid.load();
