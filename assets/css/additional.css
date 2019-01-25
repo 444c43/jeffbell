@@ -1,4 +1,12 @@
 @media screen and (max-width: 1920px) {
+	#header {
+		max-width: 50%;
+	}
+
+	.main-image {
+		width: 100%;
+	}
+
 	.image.left img {
 		width: 100%;
 	}
@@ -29,7 +37,15 @@
 	}
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1024px) {
+	#header {
+		max-width: 75%;
+	}
+
+	.main-image {
+		width: 75%;
+	}
+
 	.image.left img {
 		width: 100%;
 	}
@@ -39,7 +55,16 @@
 	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+	#header {
+		max-width: 100%;
+	}
+
+	.main-image {
+		height:100%;
+		width: 100%;
+	}
+
 	.image.left img {
 		width: 83%;
 	}
@@ -68,6 +93,24 @@
 	    content: "\f078";
 	    font-family: FontAwesome;
 	}
+}
+
+
+/* Generic CSS */
+
+.quotes:before {
+	width: 0px !important;
+}
+
+.quote-center {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.quote-right {
+	text-align: right;
+	margin-bottom: 15px;
 }
 
 .between {

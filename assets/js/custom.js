@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+
 function playVideo(videoID) {
   stopVideo();
   var vid = document.getElementById(videoID);
