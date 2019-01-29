@@ -1,101 +1,3 @@
-@media screen and (max-width: 1920px) {
-	#header {
-		max-width: 50%;
-	}
-
-	.main-image {
-		width: 100%;
-	}
-
-	.image.left img {
-		width: 100%;
-	}
-	.location {
-		width: 100%;
-		height: 450px;
-	}
-	.left-up-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-right:	10px;
-	}
-	 
-	.left-up-arrow:before {
-	    content: "\f053";
-	    font-family: FontAwesome;
-	}
-
-	.right-down-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-left:	10px;
-	}
-	 
-	.right-down-arrow:before {
-	    content: "\f054";
-	    font-family: FontAwesome;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	#header {
-		max-width: 75%;
-	}
-
-	.main-image {
-		width: 75%;
-	}
-
-	.image.left img {
-		width: 100%;
-	}
-	.location {
-		width: 100%;
-		height: 375px;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	#header {
-		max-width: 100%;
-	}
-
-	.main-image {
-		height:100%;
-		width: 100%;
-	}
-
-	.image.left img {
-		width: 83%;
-	}
-	.location {
-		width: 100%;
-		height: 300px;
-	}
-	.left-up-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-right:	10px;
-	}
-	 
-	.left-up-arrow:before {
-	    content: "\f077";
-	    font-family: FontAwesome;
-	}
-
-	.right-down-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-left:	10px;
-	}
-	 
-	.right-down-arrow:before {
-	    content: "\f078";
-	    font-family: FontAwesome;
-	}
-}
-
-
 /* Generic CSS */
 
 .quotes:before {
@@ -104,13 +6,13 @@
 
 .quote-center {
 	text-align: center;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 	margin-bottom: 10px;
 }
 
 .quote-right {
 	text-align: right;
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
 }
 
 .between {
