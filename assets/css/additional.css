@@ -41,28 +41,6 @@
 	text-align: center;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    color: #444;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/*.sign-up {
-	background-color: #9a8a09;
-}*/
-
-.panel {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
 .self {
 	height: 50%;
 	width: 50%;
@@ -73,4 +51,26 @@
 
 .actions {
 	text-align: center;
+}
+
+/* FAQ accordion */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
