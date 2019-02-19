@@ -304,6 +304,13 @@
 								location.hash = '';
 							});
 
+          // Go back to previous modal.
+          $('<div class="go-back" onclick="stopVideo()"></div>')
+            .appendTo($this)
+            .on('click', function() {
+              location.hash = $(this).closest('article').data('previous-id') || '';
+            });
+
 					// Prevent clicks from inside article from bubbling.
 						$this.on('click', function(event) {
 							event.stopPropagation();
