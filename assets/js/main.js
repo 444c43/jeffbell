@@ -308,7 +308,13 @@
           $('<div class="go-back" onclick="stopVideo()"></div>')
             .appendTo($this)
             .on('click', function() {
-              location.hash = $(this).closest('article').data('previous-id') || '';
+              const articleId = $(this).closest('article').data('previous-id');
+
+              location.hash = articleId || '';
+
+              if (articleId) {
+                playVideo(`${articleId}-video`);
+              }
             });
 
 					// Prevent clicks from inside article from bubbling.
