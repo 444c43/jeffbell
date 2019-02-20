@@ -1552,6 +1552,12 @@
       background-color: rgba(255, 255, 255, 0.075);
     }
 
+    #main article .time-remaining {
+      position: absolute;
+      top: 0.8rem;
+      left: 37%;
+    }
+
 		@media screen and (max-width: 736px) {
 
 			#main article {

@@ -7,6 +7,16 @@ function playVideo(videoID) {
   var vid = document.getElementById(videoID);
   vid.autoplay = true;
   vid.load();
+
+  vid.addEventListener('timeupdate', function() {
+    if (!isNaN(vid.duration)) {
+      const timeRemaining = vid.duration - vid.currentTime;
+      var seconds = pad(parseInt(timeRemaining % 60));
+      var minutes = pad(Math.floor(timeRemaining / 60));
+
+      $(vid).siblings('.time-remaining').html(`Time Remaining: ${minutes}:${seconds}`)
+    }
+  });
 }
 
 function stopVideo() {
@@ -16,6 +26,13 @@ function stopVideo() {
     vid[i].autoplay = false;
     vid[i].load();
   }
+}
+
+function pad(number) {
+  if (number < 10) {
+    return '0' + number;
+  }
+  return number;
 }
 
 var acc = document.getElementsByClassName("accordion");
