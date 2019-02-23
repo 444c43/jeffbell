@@ -753,10 +753,15 @@
 					}
 
 		ul.actions {
+      display: none;
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 		}
+
+    .field {
+      display: none;
+    }
 
 			ul.actions li {
 				display: inline-block;

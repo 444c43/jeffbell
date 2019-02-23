@@ -15,6 +15,11 @@ function playVideo(videoID) {
       var minutes = pad(Math.floor(timeRemaining / 60));
 
       $(vid).siblings('.time-remaining').html(`Time Remaining: ${minutes}:${seconds}`)
+
+      if (timeRemaining === 0) {
+        $(vid).siblings('.actions').show();
+        $(vid).siblings('.field').show();
+      }
     }
   });
 }
