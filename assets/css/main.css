@@ -1529,6 +1529,29 @@
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
+    #main article .go-back:before{
+      content: "\f0e2";
+	    font-family: FontAwesome;
+      cursor: pointer;
+      border-radius: 100%;
+      display: block;
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      -moz-transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    #main article .go-back:hover:before {
+      background-color: rgba(255, 255, 255, 0.075);
+    }
+
 		@media screen and (max-width: 736px) {
 
 			#main article {
