@@ -84,6 +84,26 @@
 	    content: "\f054";
 	    font-family: FontAwesome;
 	}
+
+	.team-image {
+		width: 50%;
+	}
+
+	.team {
+		padding-bottom: 30%;
+	}
+
+	.team.left img {
+		float: left;
+	}
+
+	.team.right img {
+		float: right;
+	}
+
+	.team.right h4 {
+		text-align: right;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-width: 780px) {
