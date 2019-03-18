@@ -753,10 +753,15 @@
 					}
 
 		ul.actions {
+      display: none;
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 		}
+
+    .field {
+      display: none;
+    }
 
 			ul.actions li {
 				display: inline-block;
@@ -1550,6 +1555,12 @@
 
     #main article .go-back:hover:before {
       background-color: rgba(255, 255, 255, 0.075);
+    }
+
+    #main article .time-remaining {
+      position: absolute;
+      top: 0.8rem;
+      left: 37%;
     }
 
 		@media screen and (max-width: 736px) {
