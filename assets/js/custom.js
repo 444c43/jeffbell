@@ -18,7 +18,7 @@ function playVideo(videoID) {
 
       if (timeRemaining === 0) {
         $(vid).siblings('.actions').show();
-        $(vid).siblings('.field').show();
+        $(vid).siblings('.field.option').show();
       }
     }
   });

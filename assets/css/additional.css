@@ -4,6 +4,19 @@
 	width: 0px !important;
 }
 
+a.button.icon {
+  margin:0 auto;
+  display:block;
+}
+
+.contact.button.icon {
+  width: 50%;
+}
+
+#corporate-category, #family-category {
+  margin-bottom: 10px;
+}
+
 .quote-center {
 	text-align: center;
 	/*margin-top: 15px;*/
