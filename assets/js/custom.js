@@ -1,5 +1,14 @@
+function fillContactForm() {
+  const currentHref = window.location.href;
+  if (currentHref.includes('main.html?selectedEvent')) {
+    const option = decodeURIComponent(/[^=]*$/.exec(window.location.search)[0]);
+    $('#contact-form #message').val(option);
+  }
+}
+
 $(window).load(function() {
   $("body").removeClass("preload");
+  fillContactForm();
 });
 
 function playVideo(videoID) {
@@ -22,6 +31,13 @@ function playVideo(videoID) {
       }
     }
   });
+}
+
+function sendToContactForm(selection) {
+  const currentHref = window.location.href;
+  const selectedEvent = $(`#${selection}`).find('option').length > 0 ? $(`#${selection}`).find('option:selected').html() : selection;
+  const host = /^(.*[\\\/])/.exec(currentHref)[0];
+  window.location.href = `${host}main.html?selectedEvent=${selectedEvent}#contact`;
 }
 
 function stopVideo() {
