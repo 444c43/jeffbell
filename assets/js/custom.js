@@ -14,7 +14,7 @@ function playVideo(videoID) {
       var seconds = pad(parseInt(timeRemaining % 60));
       var minutes = pad(Math.floor(timeRemaining / 60));
 
-      $(vid).siblings('.time-remaining').html(`Time Remaining: ${minutes}:${seconds}`)
+      $(vid).siblings('.time-remaining').html(`${minutes}:${seconds}`)
 
       if (timeRemaining === 0) {
         $(vid).siblings('.actions').show();
