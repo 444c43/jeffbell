@@ -66,6 +66,17 @@ a.button.icon {
 	text-align: center;
 }
 
+.modal-contact ul.icons {
+  text-align: center;
+}
+
+.modal-contact ul.icons li a {
+    height: 1.25rem;
+    line-height: 1.25rem;
+    width: 1.25rem;
+    font-size: small;
+  }
+
 /* FAQ accordion */
 .accordion {
   color: #444;

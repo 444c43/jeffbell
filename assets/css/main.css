@@ -1561,9 +1561,8 @@
     }
 
     #main article .time-remaining {
-      position: absolute;
-      top: 0.8rem;
-      left: 37%;
+      margin-top: -24px;
+      text-align: center;
     }
 
 		@media screen and (max-width: 736px) {
