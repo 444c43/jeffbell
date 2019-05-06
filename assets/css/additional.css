@@ -71,10 +71,7 @@ a.button.icon {
 }
 
 .modal-contact ul.icons li a {
-    height: 1.25rem;
-    line-height: 1.25rem;
-    width: 1.25rem;
-    font-size: small;
+    font-size: x-large;
   }
 
 /* FAQ accordion */

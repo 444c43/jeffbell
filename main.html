@@ -24,9 +24,9 @@
 					<nav>
 						<ul>
 							<li><a href="#team">The Team</a></li>
-							<li><a href="#">Media</a></li>
+							<!--<li><a href="#">Media</a></li> -->
 							<li><a href="#faqs">FAQs</a></li>
-							<li><a href="#">Reviews</a></li>
+							<!--<li><a href="#">Reviews</a></li> -->
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -42,13 +42,14 @@
 						<h2>The Team</h2>
 						<p>The Jeff Bell Experience brought to you by...</p>
 						<div class="team left">
-							<h4>Jeff Bell himself</h4>
-							<img class="team-image" src="images/jeff.jpg" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<h4>Jeff Bell</h4>
+							<img class="team-image" src="images/jeff.jpg" alt="" />My mother had me perform in a kindergarten talent show in my hometown of Colorado Springs. Stage addiction set in after winning 1st place. I continued to perform and develop skills, including TV commercials and re-enactment work.</p> While stationed with the Navy, we hired a DJ. I asked to use the mic and really got the crowd going. The DJ was so impressed he offered me a job. Since then I’ve become a TOP wedding DJ for 15 of the last 19 years.</p> When not DJ-ing I’m enjoying anything I can put Sriracha on and spending time with my beautiful fiancé, who has helped me grow to who I am today.
 						</div>
 						<div class="team right">
-							<h4>The Amazing Mr. Fred</h4>
-							<img class="team-image" src="images/fred.jpg" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<h4>Mike Gilbert</h4>
+							<img class="team-image" src="images/mike.jpg" alt="" />My first chance on a microphone was a speech at my eighth grade awards ceremony, the adrenaline rush translated into excitement as words came out. Years later, while training as a DJ, I felt that same adrenaline rush of excitement—I just knew.</p> Growing up to many music genres, thanks to my parents, prepared me for a later DJ life. With such an appreciation for music, song rotation comes easy for me.</p> It’s a great thrill to see smiles on people’s faces, watch them dance, have fun and know I did that. When not DJ-ing, I enjoy time with my wife and four children, and eating Italian food.
 						</div>
+						<!--
 						<div class="team left">
 							<h4>Frank The Tank</h4>
 							<img class="team-image" src="images/frank.jpg" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -61,6 +62,7 @@
 							<h4>Super John</h4>
 							<img class="team-image" src="images/john.jpg" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div>
+						-->
 					</article>
 					<!-- FAQs -->
 					<article id="faqs">
@@ -123,15 +125,26 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name">
+											<input type="text" name="name" id="name" placeholder="John Doe">
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email">
+											<input type="text" name="email" id="email" placeholder="jane.doe@unknown.com">
+										</div>
+										<div class="field half">
+											<label for="event-type">Event Type</label>
+											<select name="event-type" id="event-type">
+												<option value="1">Family</option>
+												<option value="2">Corporate</option>
+											</select>
+										</div>
+										<div class="field half">
+											<label for="event-date">Date</label>
+											<input type="text" name="event-date" id="event-date" placeholder="06/06/2019">
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" placeholder="I'm looking to book a great DJ for..."></textarea>
 										</div>
 									</div>
 									<ul class="actions">
