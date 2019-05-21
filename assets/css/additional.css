@@ -1,7 +1,21 @@
 /* Generic CSS */
 
+a#choose {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+#header nav ul li a#choose:hover{
+  background-color: rgba(255, 255, 255, 0.75);;
+}
+
+iframe {
+  text-align: center;
+}
+
 .quotes:before {
-	width: 0px !important;
+  width: 0px !important;
 }
 
 a.button.icon {
@@ -18,23 +32,23 @@ a.button.icon {
 }
 
 .quote-center {
-	text-align: center;
-	/*margin-top: 15px;*/
-	margin-bottom: 10px;
+  text-align: center;
+  /*margin-top: 15px;*/
+  margin-bottom: 10px;
 }
 
 .quote-right {
-	text-align: right;
-	/*margin-bottom: 15px;*/
+  text-align: right;
+  /*margin-bottom: 15px;*/
 }
 
 .between {
-	height: 180px;
+  height: 180px;
 }
 
 .logo-design {
-	height: 50%;
-	width: 50%;
+  height: 50%;
+  width: 50%;
 }
 
 .details {
@@ -42,28 +56,28 @@ a.button.icon {
 }
 
 .location {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .payment {
-	display: block;
-	margin: 20px auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .contact {
-	text-align: center;
+  text-align: center;
 }
 
 .self {
-	height: 50%;
-	width: 50%;
-	  display: block;
+  height: 50%;
+  width: 50%;
+    display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .actions {
-	text-align: center;
+  text-align: center;
 }
 
 .modal-contact ul.icons {

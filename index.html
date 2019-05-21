@@ -15,16 +15,18 @@
         <header id="header">
           <div class="content">
             <div class="inner">
-              <div><img class="main-image fade-in" src="images/full_team.jpg" alt="" /></div>
+              <div><img class="main-image fade-in" srcset="https://s3.amazonaws.com/jbe-media/images/team/mobile/full_team.jpg 600w"
+              sizes="(max-width: 600px) 600px
+              src="https://s3.amazonaws.com/jbe-media/images/team/standard/full_team.jpg" alt=""></div>
               <div><img class="logo-design" src="images/jeffbell-logo.png" alt="" /></div>
               <p>More Than Just A DJ</p>
             </div>
           </div>
           <nav>
             <ul>
-              <li><a href="#first" onclick="playVideo('first-thing-video')">First Time</a></li>
-              <li><a href="#">Please Choose</a></li>
-              <li><a href="main.html">Repeat</a></li>
+              <li><a href="#first" onclick="playVideo('first-thing-video')">First Time Visitor</a></li>
+              <li><a href="#facebook" id="choose">Please Choose</a></li>
+              <li><a href="main.html">Repeat Customer</a></li>
             </ul>
           </nav>
           <div class="modal-contact">
@@ -45,7 +47,7 @@
           <article id="first">
             <p class="time-remaining"></p>
             <video class="video" id="first-thing-video" width=100% height="240" controls>
-              <source src="https://s3.amazonaws.com/transcoded-jbe-videos/first_thing.mp4" type="video/mp4">
+              <source src="https://s3.amazonaws.com/jbe-media/videos/first_thing.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <!-- Choice: Main > Family or Corporate Event -->
@@ -71,7 +73,7 @@
           <article id="family" data-previous-id="first">
             <p class="time-remaining"></p>
             <video class="video" id="family-event-video" width=100% height="240" controls>
-              <source src="https://s3.amazonaws.com/transcoded-jbe-videos/do_not_fall_victim.mp4" type="video/mp4">
+              <source src="https://s3.amazonaws.com/jbe-media/videos/do_not_fall_victim.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <ul class="actions option">
@@ -96,7 +98,7 @@
           <article id="corporate" data-previous-id="first">
             <p class="time-remaining"></p>
             <video class="video" id="corporate-event-video" width=100% height="240" controls>
-              <source src="https://s3.amazonaws.com/transcoded-jbe-videos/choosing.mp4" type="video/mp4">
+              <source src="https://s3.amazonaws.com/jbe-media/videos/choosing.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <ul class="actions option">
@@ -121,7 +123,7 @@
           <article id="wedding" data-previous-id="family">
             <p class="time-remaining"></p>
             <video class="video" id="wedding-video" width=100% height="240" controls>
-              <source src="https://s3.amazonaws.com/transcoded-jbe-videos/professional_dj.mp4" type="video/mp4">
+              <source src="https://s3.amazonaws.com/jbe-media/videos/professional_dj.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <row class="quotes">
@@ -137,7 +139,7 @@
           <article id="other-family" data-previous-id="family">
             <p class="time-remaining"></p>
             <video class="video" id="other-family-video" width=100% height="240" controls>
-              <source src="https://s3.amazonaws.com/transcoded-jbe-videos/mitzvahs.mp4" type="video/mp4">
+              <source src="https://s3.amazonaws.com/jbe-media/videos/mitzvahs.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <div class="field option">
@@ -162,7 +164,7 @@
           <article id="holiday" data-previous-id="corporate">
             <p class="time-remaining"></p>
             <video class="video" id="holiday-video" width=100% height="240" controls>
-                <source src="https://s3.amazonaws.com/transcoded-jbe-videos/entertainment.mp4" type="video/mp4">
+                <source src="https://s3.amazonaws.com/jbe-media/videos/entertainment.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <row class="quotes">
@@ -178,7 +180,7 @@
           <article id="other-corporate" data-previous-id="corporate">
             <p class="time-remaining"></p>
             <video class="video" id="other-corporate-video" width=100% height="240" controls>
-                <source src="https://s3.amazonaws.com/transcoded-jbe-videos/corporate.mp4" type="video/mp4">
+                <source src="https://s3.amazonaws.com/jbe-media/videos/corporate.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <div class="field option">
@@ -209,6 +211,15 @@
               <p>I joined the Navy after high school and found myself in Jacksonville, Fl. When the ship I was stationed on was being de-commissioned we threw ourselves a party. The ship hired a DJ and during the party I went up to the DJ and asked if I could use his mic. I got on the mic and got everyone up singing, dancing, and chanting. At the end of the night the DJ came up to me and asked me if I wanted a job. I've been delivering ever since.</p>
             </section>
           </article>
+
+          <!-- FB Feed -->
+          <article id="facebook">
+            <header>
+              <h2>Feed</h2>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flpduvalfl%2F&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </header>
+          </article>
+
           <!-- Contact -->
           <article id="contact">
             <header>
