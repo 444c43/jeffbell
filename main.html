@@ -8,6 +8,32 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/additional.css" />
 		<link rel="stylesheet" href="assets/css/screens.css" />
+		
+		<script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>
+		<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+
+		<script type="text/javascript">
+			hs.graphicsDir = 'highslide/graphics/';
+			hs.align = 'center';
+			hs.transitions = ['expand', 'crossfade'];
+			hs.wrapperClassName = 'dark borderless floating-caption';
+			hs.fadeInOut = true;
+			hs.dimmingOpacity = .75;
+
+			// Add the controlbar
+			if (hs.addSlideshow) hs.addSlideshow({
+				//slideshowGroup: 'group1',
+				interval: 5000,
+				repeat: false,
+				useControls: true,
+				fixedControls: 'fit',
+				overlayOptions: {
+					opacity: .6,
+					position: 'bottom center',
+					hideOnMouseOut: true
+				}
+			});
+		</script>		
 	</head>
 	<body>
 		<!-- Wrapper -->
@@ -26,7 +52,7 @@
 					<nav>
 						<ul>
 							<li><a href="#team">The Team</a></li>
-							<!--<li><a href="#">Media</a></li> -->
+							<li><a href="#photos">Photos</a></li>
 							<li><a href="#faqs">FAQs</a></li>
 							<!--<li><a href="#">Reviews</a></li> -->
 							<li><a href="#contact">Contact</a></li>
@@ -66,6 +92,58 @@
 						</div>
 						-->
 					</article>
+					
+					<!-- Photos -->
+					<article id="photos">
+						<h2>Photos Of Us In Action!</h2>
+						<p>Click on the images for a larger view</p>
+						<div class="highslide-gallery">
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/01.JPG" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/01.JPG"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/02.JPG" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/02.JPG"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/03.JPG" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/03.JPG"  alt=""/>
+							</a>
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/04.JPG" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/04.JPG"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/05.jpg" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/05.jpg"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/06.jpg" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/06.jpg"  alt=""/>
+							</a>
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/07.jpg" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/07.jpg"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/08.jpg" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/08.jpg"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/09.jpg" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/09.jpg"  alt=""/>
+							</a>
+
+							<a href="https://jbe-media.s3.amazonaws.com/images/stills/10.jpg" class="highslide" title="" onclick="return hs.expand(this)">
+								<img src="https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/10.jpg"  alt=""/>
+							</a>
+						</div>
+					</article>
+
+					<!-- Videos -->
+					<article id="videos">
+						<h2>Videos Of Us In Action!</h2>
+						<p>Click on the videos to see us in action</p>
+					</article>
+
 					<!-- FAQs -->
 					<article id="faqs">
 						<h2>A Few Questions I Get</h2>
