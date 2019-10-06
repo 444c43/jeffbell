@@ -1565,6 +1565,10 @@
       text-align: center;
     }
 
+    #main article #photo-gallery a {
+      margin: 10px;
+    }
+
 		@media screen and (max-width: 736px) {
 
 			#main article {
