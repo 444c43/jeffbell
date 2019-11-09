@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var lightboxOpen = { modalOpen: false, contentLoaded: false };
+
 (function($) {
 
 	skel.breakpoints({
@@ -81,8 +83,9 @@
 					var $article = $main_articles.filter('#' + id);
 
 					// No such article? Bail.
-						if ($article.length == 0)
+						if ($article.length == 0) {
 							return;
+            }
 
 					// Handle lock.
 
@@ -206,6 +209,14 @@
 				$main._hide = function(addState) {
 
 					var $article = $main_articles.filter('.active');
+
+          // Skip if event triggered by lightbox open
+          if (lightboxOpen.modalOpen || lightboxOpen.contentLoaded) {
+            if (!lightboxOpen.contentLoaded) {
+              lightboxOpen.modalOpen = false;
+            }
+            return;
+          }
 
 					// Article not visible? Bail.
 						if (!$body.hasClass('is-article-visible'))
