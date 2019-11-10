@@ -1,38 +1,5 @@
 async function addPhotos() {
-  var image = "https://jbe-media.s3.amazonaws.com/images/stills/"
-  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/"
-  var increment = 1;
-  var additionalPhotosExist = true;
-
-  do {
-    var a = document.createElement("a");
-    var href = document.createAttribute("href");
-    href.value = image + pad(increment, 2) + ".jpg";
-
-    var img = document.createElement("img");
-    var src = document.createAttribute("src");
-    src.value = thumbnail + pad(increment, 2) + ".jpg";
-
-    try {
-      const response = await fetch(src.value, { type: 'HEAD' });
-
-      if (response.status == 403) {
-        additionalPhotosExist = false;
-      } else {
-        img.setAttributeNode(src);
-
-        a.setAttributeNode(href);
-
-        a.insertAdjacentElement('afterbegin', img);
-
-        var currentDiv = document.getElementById("photo-gallery");
-        currentDiv.insertAdjacentElement('afterbegin', a);
-        increment += 1;
-      }
-    } catch(e) {
-      additionalPhotosExist = false;
-    }
-  } while(additionalPhotosExist);
+  loadImage(1);
 }
 
 async function addVideos() {
@@ -84,10 +51,39 @@ function pad(n, width, z) {
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
-$(window).load(async function() {
-  await addVideos();
-  await addPhotos();
+function loadImage(increment) {
+  var image = "https://jbe-media.s3.amazonaws.com/images/stills/"
+  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/"
 
+  var a = document.createElement("a");
+  var href = document.createAttribute("href");
+  href.value = image + pad(increment, 2) + ".jpg";
+
+  var img = document.createElement("img");
+  var src = document.createAttribute("src");
+  src.value = thumbnail + pad(increment, 2) + ".jpg";
+
+  img.setAttributeNode(src);
+
+  a.setAttributeNode(href);
+
+  a.insertAdjacentElement('afterbegin', img);
+
+  var currentDiv = document.getElementById("photo-gallery");
+  currentDiv.insertAdjacentElement('afterbegin', a);
+
+  img.onload = function(){
+    loadImage(increment + 1);
+  }
+
+  img.onerror = function(){
+    img.remove();
+    a.remove();
+    loadPhotoGallery();
+  }
+}
+
+function loadPhotoGallery() {
   $('#photo-gallery a').simpleLightbox({
     beforeSetContent: function() {
       lightboxOpen.modalOpen = true;
@@ -98,7 +94,9 @@ $(window).load(async function() {
     },
     videoRegex: new RegExp(/720p/)
   });
+}
 
+function loadVideoGallery() {
   $('#video-gallery a').simpleLightbox({
     beforeSetContent: function() {
       lightboxOpen.modalOpen = true;
@@ -109,4 +107,11 @@ $(window).load(async function() {
     },
     videoRegex: new RegExp(/720p/)
   });
+}
+
+$(window).load(async function() {
+  addPhotos();
+
+  await addVideos();
+  loadVideoGallery();
 });
