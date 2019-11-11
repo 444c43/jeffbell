@@ -20,11 +20,10 @@ iframe {
 
 a.button.icon {
   margin:0 auto;
-  display:block;
 }
 
 .contact.button.icon {
-  width: 50%;
+  width: 45%;
 }
 
 #corporate-category, #family-category {
@@ -77,6 +76,10 @@ a.button.icon {
 }
 
 .actions {
+  text-align: center;
+}
+
+.modal-contact {
   text-align: center;
 }
 
