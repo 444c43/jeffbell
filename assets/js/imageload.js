@@ -4,7 +4,7 @@ async function addPhotos() {
 
 async function addVideos() {
   var video = "https://jbe-media.s3.amazonaws.com/videos/samples/720p/"
-  var thumbnail = "images/play_icon.png"
+  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/video/"
   var increment = 1;
   var additionalVideosExist = true;
 
@@ -15,11 +15,7 @@ async function addVideos() {
 
     var img = document.createElement("img");
     var src = document.createAttribute("src");
-    var width = document.createAttribute('width');
-    var height = document.createAttribute('height');
-    width.value = 150;
-    height.value = 150;
-    src.value = thumbnail
+    src.value = thumbnail + pad(increment, 3) + ".jpg";
 
     try {
       const response = await fetch(href.value, { type: 'HEAD' });
@@ -28,8 +24,6 @@ async function addVideos() {
         additionalVideosExist = false;
       } else {
         img.setAttributeNode(src);
-        img.setAttributeNode(width);
-        img.setAttributeNode(height);
 
         a.setAttributeNode(href);
 
