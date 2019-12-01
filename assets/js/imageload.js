@@ -11,7 +11,7 @@ async function addHelpful() {
   do {
     var a = document.createElement("a");
     var href = document.createAttribute("href");
-    href.value = video + pad(increment, 3) + ".mp4";
+    href.value = helpful + pad(increment, 3) + ".mp4";
 
     var img = document.createElement("img");
     var src = document.createAttribute("src");
