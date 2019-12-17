@@ -45,10 +45,9 @@
 		width: 100%;
 		height: 375px;
 	}
-
-	button.accordion.team {
-    	width: 50%;
-	}
+.team.left, .team.right {
+  height: 400px;
+}
 }
 
 @media screen and (min-width: 1025px) {
@@ -90,11 +89,13 @@
 	}
 
 	.team-image {
-		width: 50%;
+		width: 40%;
+		max-height: 100%;
 	}
 
 	.team {
 		padding-bottom: 15px;
+		display: block;
 	}
 
 	.team.left img {
@@ -111,10 +112,11 @@
 
 	button.accordion.team {
     	width: 50%;
+    	height: inherit;
 	}
 }
 
 @media screen and (orientation: landscape) and (max-width: 780px) {
 #header .content {
-    max-width: 50%;
+    /*max-width: 50%;*/
 }
