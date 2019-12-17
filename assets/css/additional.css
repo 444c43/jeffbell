@@ -1,5 +1,25 @@
 /* Generic CSS */
 
+button.accordion.team {
+    box-shadow: inset 0 0 0 0px;
+    letter-spacing: 0rem;
+    height: inherit;
+    line-height: 2em;
+}
+
+.members {
+  height: inherit;
+}
+
+.team.left, .team.right {
+  display: inline-block;
+  height: 450px;
+}
+
+.ul-members {
+  list-style: disc;
+}
+
 #helpful-videos, #videos {
   text-align: center;
 }
