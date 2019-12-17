@@ -39,6 +39,43 @@ async function addHelpful() {
   } while(additionalVideosExist);
 }
 
+async function addLighting() {
+  var helpful ="https://jbe-media.s3.amazonaws.com/videos/lighting/"
+  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/lighting/"
+  var increment = 1;
+  var additionalVideosExist = true;
+
+  do {
+    var a = document.createElement("a");
+    var href = document.createAttribute("href");
+    href.value = lighting + pad(increment, 3) + ".mp4";
+
+    var img = document.createElement("img");
+    var src = document.createAttribute("src");
+    src.value = thumbnail + pad(increment, 3) + ".jpg";
+
+    try {
+      const response = await fetch(href.value, { type: 'HEAD' });
+
+      if (response.status == 403) {
+        additionalVideosExist = false;
+      } else {
+        img.setAttributeNode(src);
+
+        a.setAttributeNode(href);
+
+        a.insertAdjacentElement('afterbegin', img);
+
+        var currentDiv = document.getElementById("lighting-videos");
+        currentDiv.insertAdjacentElement('afterbegin', a);
+        increment += 1;
+      }
+    } catch(e) {
+      additionalVideosExist = false;
+    }
+  } while(additionalVideosExist);
+}
+
 async function addVideos() {
   var video = "https://jbe-media.s3.amazonaws.com/videos/samples/"
   var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/video/"
@@ -144,6 +181,19 @@ function loadHelpfulVideos() {
   });
 }
 
+function loadLightingVideos() {
+  $('#lighting-videos a').simpleLightbox({
+    beforeSetContent: function() {
+      lightboxOpen.modalOpen = true;
+      lightboxOpen.contentLoaded = true;
+    },
+    beforeClose: function() {
+      lightboxOpen.contentLoaded = false;
+    },
+    videoRegex: new RegExp(/lighting/)
+  });
+}
+
 $(window).load(async function() {
   addPhotos();
 
@@ -152,4 +202,7 @@ $(window).load(async function() {
   
   await addHelpful();
   loadHelpfulVideos();
+
+  await addLighting();
+  loadLightingVideos();
 });
