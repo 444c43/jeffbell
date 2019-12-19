@@ -39,6 +39,43 @@ async function addHelpful() {
   } while(additionalVideosExist);
 }
 
+async function addSelfie() {
+  var selfie ="https://jbe-media.s3.amazonaws.com/videos/selfie/"
+  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/selfie/"
+  var increment = 1;
+  var additionalVideosExist = true;
+
+  do {
+    var a = document.createElement("a");
+    var href = document.createAttribute("href");
+    href.value = selfie + pad(increment, 3) + ".mp4";
+
+    var img = document.createElement("img");
+    var src = document.createAttribute("src");
+    src.value = thumbnail + pad(increment, 3) + ".jpg";
+
+    try {
+      const response = await fetch(href.value, { type: 'HEAD' });
+
+      if (response.status == 403) {
+        additionalVideosExist = false;
+      } else {
+        img.setAttributeNode(src);
+
+        a.setAttributeNode(href);
+
+        a.insertAdjacentElement('afterbegin', img);
+
+        var currentDiv = document.getElementById("selfie-videos");
+        currentDiv.insertAdjacentElement('afterbegin', a);
+        increment += 1;
+      }
+    } catch(e) {
+      additionalVideosExist = false;
+    }
+  } while(additionalVideosExist);
+}
+
 async function addLighting() {
   var lighting ="https://jbe-media.s3.amazonaws.com/videos/lighting/"
   var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/lighting/"
@@ -194,6 +231,19 @@ function loadLightingVideos() {
   });
 }
 
+function loadSelfieVideos() {
+  $('#selfie-videos a').simpleLightbox({
+    beforeSetContent: function() {
+      lightboxOpen.modalOpen = true;
+      lightboxOpen.contentLoaded = true;
+    },
+    beforeClose: function() {
+      lightboxOpen.contentLoaded = false;
+    },
+    videoRegex: new RegExp(/selfie/)
+  });
+}
+
 $(window).load(async function() {
   addPhotos();
 
@@ -205,4 +255,7 @@ $(window).load(async function() {
 
   await addLighting();
   loadLightingVideos();
+
+  await addSelfie();
+  loadSelfieVideos();
 });

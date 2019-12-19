@@ -28,15 +28,15 @@ button.accordion.team {
   list-style: disc;
 }
 
-#helpful, #videos, #lighting {
+#helpful, #videos, #lighting, #selfie{
   text-align: center;
 }
 
-#helpful a.button, #videos a.button, #lighting a.button {
+#helpful a.button, #videos a.button, #lighting a.button, #selfie a.button {
   margin-bottom: 5px;
 }
 
-#helpful-videos, #lighting-videos, #video-gallary img {
+#helpful-videos, #lighting-videos, #video-gallary, #selfie-videos img {
   padding-right: 10px;
   padding-bottom: 10px;
 }
