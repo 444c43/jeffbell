@@ -40,7 +40,7 @@ async function addHelpful() {
 }
 
 async function addLighting() {
-  var helpful ="https://jbe-media.s3.amazonaws.com/videos/lighting/"
+  var lighting ="https://jbe-media.s3.amazonaws.com/videos/lighting/"
   var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/lighting/"
   var increment = 1;
   var additionalVideosExist = true;
