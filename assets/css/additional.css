@@ -1,5 +1,18 @@
 /* Generic CSS */
 
+select.yearselect.form-control {
+    float: inherit !important;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+label.questiontitle {
+    padding-top: 3rem;
+    margin: 0 0 0 0;
+}
+
 .team-image {
   display: block;
   margin-left: auto;
