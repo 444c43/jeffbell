@@ -148,8 +148,8 @@ function pad(n, width, z) {
 }
 
 function loadImage(increment) {
-  var image = "https://jbe-media.s3.amazonaws.com/images/stills/"
-  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/"
+  var image = "https://jbe-media.s3.amazonaws.com/images/stills/Jacksonville Wedding DJ "
+  var thumbnail = "https://jbe-media.s3.amazonaws.com/images/thumbnails/stills/Jacksonville Wedding DJ "
 
   var a = document.createElement("a");
   var href = document.createAttribute("href");
