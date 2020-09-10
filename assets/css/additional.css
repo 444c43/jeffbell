@@ -10,6 +10,7 @@ p {
 
 p.more {
   margin-top: 10px;
+  font-size: 10pt;
 }
 
 label.questiontitle {
@@ -38,7 +39,6 @@ button.accordion.team {
 
 .team.left, .team.right {
   display: inline-block;
-  height: 450px;
 }
 
 .ul-members {
