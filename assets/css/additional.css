@@ -14,6 +14,11 @@ p {
     margin: 0 0 0 0;
 }
 
+p.panel {
+  font-size: inherit;
+  font-family: inherit;
+}
+
 p.more {
   margin-top: 10px;
   font-size: 10pt;
