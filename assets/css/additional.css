@@ -1,5 +1,11 @@
 /* Generic CSS */
 
+@media screen and (min-width: 1025px) {
+  .team.left, .team.right {
+    height: 450px;
+  }
+}
+
 select.yearselect.form-control {
     float: inherit !important;
 }
@@ -11,6 +17,7 @@ p {
 p.more {
   margin-top: 10px;
   font-size: 10pt;
+  text-align: center;
 }
 
 label.questiontitle {
@@ -162,6 +169,8 @@ a.button.icon {
 
 .panel {
   padding: 0 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
