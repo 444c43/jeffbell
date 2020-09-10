@@ -8,6 +8,10 @@ p {
     margin: 0 0 0 0;
 }
 
+p.more {
+  margin-top: 10px;
+}
+
 label.questiontitle {
     padding-top: 3rem;
     margin: 0 0 0 0;
