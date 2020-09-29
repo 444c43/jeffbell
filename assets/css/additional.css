@@ -14,7 +14,7 @@ p {
     margin: 0 0 0 0;
 }
 
-p.panel {
+p.acc-panel {
   font-size: inherit;
   font-family: inherit;
 }
@@ -172,7 +172,7 @@ a.button.icon {
   background-color: #ccc;
 }
 
-.panel {
+.acc-panel {
   padding: 0 18px;
   margin-top: 10px;
   margin-bottom: 10px;
