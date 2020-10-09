@@ -32,11 +32,11 @@
 	    font-family: FontAwesome;
 	}
 	.laurel-video {
-		height: 22vh;
+		height: 10vh;
 	}
 
 	ul.laurels li {
-		display: inherit;
+		display: inline-block;
 	}
 }
 
@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 	.laurel-video {
-		width: 40vw;
+		width: 18vw;
 	}
 
 	ul.laurels li {
@@ -138,7 +138,7 @@
     	height: inherit;
 	}
 	.laurel-video {
-		width: 22vw;
+		width: 16vw;
 	}
 
 	ul.laurels li {
