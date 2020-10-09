@@ -5,11 +5,29 @@
     height: 450px;
   }
 }
+
 .laurel-video {
-  width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 1680px) {
+  .laurel-video {
+      width: 30%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .laurel-video {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .laurel-video {
+      width: 60%;
+  }
 }
 
 select.yearselect.form-control {
