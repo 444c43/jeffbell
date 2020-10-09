@@ -1,35 +1,5 @@
 /* Generic CSS */
 
-@media screen and (min-width: 1025px) {
-  .team.left, .team.right {
-    height: 450px;
-  }
-}
-
-.laurel-video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 1680px) {
-  .laurel-video {
-    height: 25vh;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .laurel-video {
-    height: 22vh;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .laurel-video {
-    height: 22vh;
-  }
-}
-
 select.yearselect.form-control {
     float: inherit !important;
 }

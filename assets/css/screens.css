@@ -31,6 +31,13 @@
 	    content: "\f078";
 	    font-family: FontAwesome;
 	}
+	.laurel-video {
+		height: 22vh;
+	}
+
+	ul.laurels li {
+		display: inherit;
+	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -45,9 +52,25 @@
 		width: 100%;
 		height: 375px;
 	}
-.team.left, .team.right {
-  height: 400px;
+	.team.left, .team.right {
+		height: 400px;
+	}
 }
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+	.laurel-video {
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	.laurel-video {
+		width: 40vw;
+	}
+
+	ul.laurels li {
+		display: inline-block;
+	}
 }
 
 @media screen and (min-width: 1025px) {
@@ -114,9 +137,14 @@
     	width: 50%;
     	height: inherit;
 	}
-}
+	.laurel-video {
+		width: 22vw;
+	}
 
-@media screen and (orientation: landscape) and (max-width: 780px) {
-#header .content {
-    /*max-width: 50%;*/
+	ul.laurels li {
+		display: inline-block;
+	}
+	.team.left, .team.right {
+		height: 450px;
+	}
 }
