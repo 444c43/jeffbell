@@ -14,19 +14,19 @@
 
 @media screen and (max-width: 1680px) {
   .laurel-video {
-      width: 30%;
+    height: 25vh;
   }
 }
 
 @media screen and (max-width: 736px) {
   .laurel-video {
-      width: 50%;
+    height: 22vh;
   }
 }
 
 @media screen and (max-width: 360px) {
   .laurel-video {
-      width: 60%;
+    height: 22vh;
   }
 }
 
