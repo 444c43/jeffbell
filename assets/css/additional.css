@@ -1,7 +1,7 @@
 /* Generic CSS */
 
 select.yearselect.form-control {
-    float: inherit !important;
+  float: inherit !important;
 }
 
 p {
@@ -19,6 +19,10 @@ p.more {
   text-align: center;
 }
 
+p.summary {
+  margin: 0 0 1rem 0;
+}
+
 label.questiontitle {
     padding-top: 3rem;
     margin: 0 0 0 0;
@@ -32,10 +36,10 @@ label.questiontitle {
 }
 
 button.accordion.team {
-    box-shadow: inset 0 0 0 0px;
-    letter-spacing: 0rem;
-    line-height: 2em;
-      margin-left: auto;
+  box-shadow: inset 0 0 0 0px;
+  letter-spacing: 0rem;
+  line-height: 2em;
+  margin-left: auto;
   margin-right: auto;
 }
 

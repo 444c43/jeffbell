@@ -11,25 +11,25 @@
 		height: 300px;
 	}
 	.left-up-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-right:	10px;
+		list-style-type:none;
+		position: relative;
+		padding-right:	10px;
 	}
 	 
 	.left-up-arrow:before {
-	    content: "\f077";
-	    font-family: FontAwesome;
+		content: "\f077";
+		font-family: FontAwesome;
 	}
 
 	.right-down-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-left:	10px;
+		list-style-type:none;
+		position: relative;
+		padding-left:	10px;
 	}
 	 
 	.right-down-arrow:before {
-	    content: "\f078";
-	    font-family: FontAwesome;
+		content: "\f078";
+		font-family: FontAwesome;
 	}
 	.laurel-video {
 		height: 10vh;
@@ -38,8 +38,16 @@
 	ul.laurels li {
 		display: inline-block;
 	}
+
 	ul.actions li {
-  		padding: 0 0 10 0;
+		padding: 0 0 10 0;
+	}
+
+	ul.stacked li {
+		display: block;
+		padding: 0 0 10px 0;
+		vertical-align: middle;
+		text-align: center;
 	}
 }
 
@@ -59,7 +67,14 @@
 		height: 400px;
 	}
 	ul.actions li {
-  		padding: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+
+	ul.stacked li {
+		display: block;
+		padding: 0 0 10px 0;
+		vertical-align: middle;
+		text-align: center;
 	}
 }
 
@@ -96,25 +111,25 @@
 		height: 450px;
 	}
 	.left-up-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-right:	10px;
+		list-style-type:none;
+		position: relative;
+		padding-right:	10px;
 	}
 	 
 	.left-up-arrow:before {
-	    content: "\f053";
-	    font-family: FontAwesome;
+		content: "\f053";
+		font-family: FontAwesome;
 	}
 
 	.right-down-arrow {
-	    list-style-type:none;  
-	    position: relative;
-	    padding-left:	10px;
+		list-style-type:none;
+		position: relative;
+		padding-left:	10px;
 	}
 	 
 	.right-down-arrow:before {
-	    content: "\f054";
-	    font-family: FontAwesome;
+		content: "\f054";
+		font-family: FontAwesome;
 	}
 
 	.team-image {
@@ -140,8 +155,8 @@
 	}
 
 	button.accordion.team {
-    	width: 50%;
-    	height: inherit;
+		width: 50%;
+		height: inherit;
 	}
 	.laurel-video {
 		width: 16vw;
@@ -152,5 +167,19 @@
 	}
 	.team.left, .team.right {
 		height: 450px;
+	}
+
+	ul.stacked li {
+		display: block;
+		padding: 0 0 10px 0;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	ul.actions li {
+		display: inline-block;
+		padding: 0 0 0 0;
+		vertical-align: middle;
+		text-align: center;
 	}
 }
